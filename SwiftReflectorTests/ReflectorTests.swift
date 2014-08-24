@@ -103,11 +103,15 @@ class ReflectorTests: XCTestCase {
     let properties  = reflector.properties
     let methods     = reflector.methods
     let instance    = reflector.createInstance()
+    
+    let example = "My Example String"
     reflector.execute({ (`self`) -> () in
       println("I have access to self: \(`self`)")
-    }, instance: instance)
+    }, instance: example)
     let returnValue = reflector.execute({ (`self`) -> String in
       return `self`.substringFromIndex(5)
-    }, instance: instance)
+    }, instance: example)
+    
+    XCTAssertTrue(true, "Executed integral test")
   }
 }
