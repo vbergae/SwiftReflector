@@ -35,6 +35,6 @@ SwiftReflector is an experiment and helper class to get some reflection on Swift
     }, instance: instance)
     
     // Executes code with return value
-    let returnValue = let returnValue = reflector.execute({ (`self`) -> String in
+    let returnValue:String = reflector.execute({ (`self`) -> String in
       return `self`.substringFromIndex(5)
     }, instance: instance)
