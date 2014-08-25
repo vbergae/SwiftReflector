@@ -15,5 +15,6 @@ FOUNDATION_EXPORT double SwiftReflectorVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftReflectorVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SwiftReflector/PublicHeader.h>
+#import "SRClassBuilder.h"
 
 

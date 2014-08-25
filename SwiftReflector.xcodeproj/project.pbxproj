@@ -10,6 +10,8 @@
 		CC48F61C19A7F60300077627 /* SwiftReflector.h in Headers */ = {isa = PBXBuildFile; fileRef = CC48F61B19A7F60300077627 /* SwiftReflector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC48F62619A7F60300077627 /* ReflectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48F62519A7F60300077627 /* ReflectorTests.swift */; };
 		CC48F63019A7F62D00077627 /* Reflector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48F62F19A7F62D00077627 /* Reflector.swift */; };
+		CCF8DBF019ABD71B0087FC35 /* SRClassBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF8DBEE19ABD71B0087FC35 /* SRClassBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCF8DBF119ABD71B0087FC35 /* SRClassBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8DBEF19ABD71B0087FC35 /* SRClassBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		CC48F62419A7F60300077627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC48F62519A7F60300077627 /* ReflectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectorTests.swift; sourceTree = "<group>"; };
 		CC48F62F19A7F62D00077627 /* Reflector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflector.swift; sourceTree = "<group>"; };
+		CCA91AAC19ABDA6200954CA2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CCF8DBEE19ABD71B0087FC35 /* SRClassBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClassBuilder.h; sourceTree = "<group>"; };
+		CCF8DBEF19ABD71B0087FC35 /* SRClassBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClassBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		CC48F61819A7F60200077627 /* SwiftReflector */ = {
 			isa = PBXGroup;
 			children = (
+				CCA91AAB19ABDA2300954CA2 /* ObjC */,
 				CC48F61B19A7F60300077627 /* SwiftReflector.h */,
 				CC48F61919A7F60300077627 /* Supporting Files */,
 				CC48F62F19A7F62D00077627 /* Reflector.swift */,
@@ -71,6 +77,7 @@
 		CC48F61919A7F60300077627 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCA91AAC19ABDA6200954CA2 /* README.md */,
 				CC48F61A19A7F60300077627 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -93,6 +100,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CCA91AAB19ABDA2300954CA2 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8DBEE19ABD71B0087FC35 /* SRClassBuilder.h */,
+				CCF8DBEF19ABD71B0087FC35 /* SRClassBuilder.m */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -100,6 +116,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF8DBF019ABD71B0087FC35 /* SRClassBuilder.h in Headers */,
 				CC48F61C19A7F60300077627 /* SwiftReflector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC48F63019A7F62D00077627 /* Reflector.swift in Sources */,
+				CCF8DBF119ABD71B0087FC35 /* SRClassBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +399,7 @@
 				CC48F62B19A7F60300077627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC48F62C19A7F60300077627 /* Build configuration list for PBXNativeTarget "SwiftReflectorTests" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +408,7 @@
 				CC48F62E19A7F60300077627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

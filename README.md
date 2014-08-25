@@ -23,6 +23,9 @@ SwiftReflector is an experiment and helper class to get some reflection on Swift
 
 	// Creates a new instance
 	let instance    = reflector.createInstance()
+
+  // Create a new instance from name
+  let instance    = Reflector.createInstance("NSData")
 	
 ### Execute code
 

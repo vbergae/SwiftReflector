@@ -40,6 +40,10 @@ public class Reflector<T:NSObject> {
     return T()
   }
   
+  public class func createInstance(className:String) -> AnyObject? {
+    return SRClassBuilder.createInstanceFromString(className)
+  }
+  
   public func execute(code: (`self`:T) -> (), instance:T) {
     code(`self`: instance)
   }
@@ -47,8 +51,6 @@ public class Reflector<T:NSObject> {
   public func execute<U>(code: (`self`:T) -> U, instance:T) -> U {
     return code(`self`: instance)
   }
-  
-  
   
   private func loadName() -> String {
     return NSString(UTF8String: class_getName(self.`class`))

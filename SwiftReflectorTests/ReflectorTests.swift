@@ -84,6 +84,14 @@ class ReflectorTests: XCTestCase {
     XCTAssertTrue(returned == 4)
   }
   
+  func testCreateInstanceFromString() {
+    let className = "NSData"
+    let instance: AnyObject? = Reflector.createInstance(className)
+    
+    XCTAssertTrue(instance != nil)
+    XCTAssertTrue(instance is NSData)
+  }
+  
   func testPerformance() {
 
     self.measureBlock() {
