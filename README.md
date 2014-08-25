@@ -10,7 +10,7 @@ SwiftReflector is an experiment and helper class to get some reflection on Swift
 
 ### Class Information
 
-	// Return full qualified name
+    // Return full qualified name
     let name        = reflector.name
     
     // Class properties
@@ -21,11 +21,11 @@ SwiftReflector is an experiment and helper class to get some reflection on Swift
 
 ### Create instances
 
-	// Creates a new instance
-	let instance    = reflector.createInstance()
+    // Creates a new instance
+    let instance    = reflector.createInstance()
 
-  // Create a new instance from name
-  let instance    = Reflector.createInstance("NSData")
+    // Create a new instance from name
+    let instance    = Reflector.createInstance("NSData")
 	
 ### Execute code
 
